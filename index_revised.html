@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <title>Sophie Amazing Page</title>
+	<style>
+	.mnuMainMenuItem {
+	display: inline-block;
+    position:relative;
+	float: left;
+	padding-top: 17px;
+	padding-bottom: 26px;
+	margin-left: 49px;
+	width: 157px;
+	list-style-type: none;
+	text-align: center;
+	color: rgba(252,249,249,1.00);
+	background-color: rgba(0,0,0,1.00);
+	text-decoration: none;
+
+    }
+    .mnuSubMenu {
+        position: absolute;
+        display: none;
+    }
+    .mnuMainMenuItem:hover .mnuSubMenu{
+        display:block;
+        /*margin:25px;*/
+        background-color:lightblue;
+    }
+
+    .mnuLeaf{
+        /*margin:25px;*/
+        text-decoration : none;
+        /*text-align:center;*/
+        background-color:lightblue;
+    }
+    
+
+    </style>
+</head>
+
+<body>
+<ul>
+    <li class="mnuMainMenuItem"><a href="#">Home</a></li>
+    <li class="mnuMainMenuItem">
+        <a href="#">Products</a>
+        <ul class="mnuSubMenu">
+            <li class="mnuLeaf"><a href="#">Oven</a></li>
+            <li class="mnuLeaf"><a href="#">Cooktops</a></li>
+        </ul>
+    </li>
+    <li class="mnuMainMenuItem"><a href="#">Blog</a></li>
+    <li class="mnuMainMenuItem"><a href="#">Contact Us</a></li>
+</ul>
+
+</body>
+</html>
